@@ -1,5 +1,6 @@
 async function windowActions() {
   const response = await fetch("api/dining");
+  console.log(response)
   const halls = await response.json();
   const hall_data = halls.data
   console.log(hall_data);
@@ -16,7 +17,7 @@ async function windowActions() {
   console.log(k);
   document.getElementById("tableData").innerHTML = k;
 
-  /** function buildHtmlTable(selector) {
+  function buildHtmlTable(selector) {
     var cols = addAllColumnHeaders(halls, selector);
     for (var i = 0; i < halls.length; i++) {
       var row = $("<tr/>");
@@ -44,6 +45,6 @@ async function windowActions() {
     $(selector).append(headerTr$);
     return columnSet;
   }
-  */
+  
 }
 window.onload = windowActions;
