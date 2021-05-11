@@ -6,6 +6,10 @@ import db from "../database/initializeDB.js";
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  res.status(200).json({ message: 'Connected!' });
+});
+
 /// /////////////////////////////////
 /// ////Dining Hall Endpoints////////
 /// /////////////////////////////////
