@@ -1,16 +1,16 @@
 async function windowActions() {
-  const response1 = await fetch("api/meals");
+  const response1 = await fetch("/meals");
   console.log(response1)
   const meals = await response1.json();
   const meals_data = meals.data
   console.log(meals_data);
-  const response2 = await fetch("api/macros");
+  const response2 = await fetch("/macros");
   console.log(response2)
   const macros = await response2.json()
   const macros_data = macros.data
   console.log(macros_data)
 
-  
+
 
 
 
