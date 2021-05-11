@@ -10,7 +10,7 @@ async function windowActions() {
   const macros_data = macros.data
   console.log(macros_data)
 
-
+  
 
 
 
